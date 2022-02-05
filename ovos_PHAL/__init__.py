@@ -1,7 +1,8 @@
 from ovos_workshop import OVOSAbstractApplication
 from ovos_plugin_manager.phal import find_phal_plugins, PHALPlugin
 from ovos_utils.messagebus import get_mycroft_bus
-from ovos_utils import  wait_for_exit_signal
+from ovos_utils import wait_for_exit_signal
+from ovos_utils.log import LOG
 from ovos_utils.configuration import read_mycroft_config
 from threading import Event
 from time import sleep
@@ -25,7 +26,7 @@ class PHAL(OVOSAbstractApplication):
             if config.get("enabled"):
                 try:
                     self.drivers[name] = plug()
-                    print("PHAL plugin enabled:", name)
+                    LOG.info("PHAL plugin enabled:", name)
                 except:
                     continue
 
