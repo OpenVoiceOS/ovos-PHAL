@@ -1,7 +1,7 @@
 from ovos_PHAL import PHAL
 
 
-if __name__ == "__main__":
+def main():
     # config read from mycroft.conf
     # "PHAL": {
     #     "ovos-PHAL-plugin-display-manager-ipc": {"enabled": true},
@@ -9,3 +9,7 @@ if __name__ == "__main__":
     # }
     phal = PHAL()
     phal.start()
+    
+    
+if __name__ == "__main__":
+    main()

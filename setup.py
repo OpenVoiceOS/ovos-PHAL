@@ -9,5 +9,10 @@ setup(
     license='apache-2.0',
     author='jarbasAi',
     author_email='jarbasai@mailfence.com',
-    include_package_data=True
+    include_package_data=True,
+    entry_points={
+        'console_scripts': [
+            'ovos_PHAL=ovos_PHAL.__main__:main'
+        ]
+    }
 )
