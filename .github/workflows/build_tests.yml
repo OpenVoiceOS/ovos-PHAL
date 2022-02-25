@@ -1,6 +1,22 @@
 name: Run Build Tests
 on:
   push:
+    branches:
+      - master
+  pull_request:
+    branches:
+      - dev
+    paths-ignore:
+      - 'ovos_PHAL/version.py'
+      - 'test/**'
+      - 'examples/**'
+      - '.github/**'
+      - '.gitignore'
+      - 'LICENSE'
+      - 'CHANGELOG.md'
+      - 'MANIFEST.in'
+      - 'readme.md'
+      - 'scripts/**'
   workflow_dispatch:
 
 jobs:
@@ -20,9 +36,6 @@ jobs:
       - name: Build Distribution Packages (bdist_wheel)
         run: |
           python setup.py bdist_wheel
-      - name: Build Source Packages (sdist)
-        run: |
-          python setup.py sdist
-      - name: Install core repo
+      - name: Install package
         run: |
           pip install .
