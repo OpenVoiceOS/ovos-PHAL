@@ -29,7 +29,7 @@ class PHAL(OVOSAbstractApplication):
                 enabled = config.get("enabled")
             if enabled:
                 try:
-                    self.drivers[name] = plug()
+                    self.drivers[name] = plug(bus=self.bus, config=config)
                     LOG.info(f"PHAL plugin loaded: {name}")
                 except Exception:
                     LOG.exception(f"failed to load PHAL plugin: {name}")
