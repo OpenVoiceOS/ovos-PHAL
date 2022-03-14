@@ -23,11 +23,16 @@ class PHAL(OVOSAbstractApplication):
     def load_plugins(self):
         for name, plug in find_phal_plugins().items():
             config = self.config.get(name) or {}
-            if config.get("enabled"):
+            if hasattr(plug, "validator"):
+                enabled = plug.validator.validate(config)
+            else:
+                enabled = config.get("enabled")
+            if enabled:
                 try:
                     self.drivers[name] = plug()
-                    LOG.info("PHAL plugin enabled:", name)
-                except:
+                    LOG.info(f"PHAL plugin loaded: {name}")
+                except Exception:
+                    LOG.exception(f"failed to load PHAL plugin: {name}")
                     continue
 
     def start(self):
