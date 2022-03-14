@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos_PHAL/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.1...HEAD)
+
+**Implemented enhancements:**
+
+- PHAL validator [\#2](https://github.com/OpenVoiceOS/ovos_PHAL/pull/2) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.1](https://github.com/OpenVoiceOS/ovos_PHAL/tree/V0.0.1) (2022-02-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.1a1...V0.0.1)
+
 ## [V0.0.1a1](https://github.com/OpenVoiceOS/ovos_PHAL/tree/V0.0.1a1) (2022-02-25)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/0.0.1a1...V0.0.1a1)
