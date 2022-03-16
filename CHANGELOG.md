@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos_PHAL/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2a1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2a2...HEAD)
+
+**Implemented enhancements:**
+
+- process status [\#4](https://github.com/OpenVoiceOS/ovos_PHAL/pull/4) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.2a2](https://github.com/OpenVoiceOS/ovos_PHAL/tree/V0.0.2a2) (2022-03-14)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2a1...V0.0.2a2)
 
 **Fixed bugs:**
 
