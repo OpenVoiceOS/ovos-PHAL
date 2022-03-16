@@ -1,2 +1,2 @@
-ovos_utils>=0.0.12
+ovos_utils>=0.0.20a2
 ovos_workshop
