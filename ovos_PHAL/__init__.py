@@ -36,7 +36,7 @@ class PHAL(OVOSAbstractApplication):
         callbacks = StatusCallbackMap(on_ready=on_ready,
                                       on_error=on_error,
                                       on_stopping=on_stopping)
-        self.status = ProcessStatus('speech', callback_map=callbacks)
+        self.status = ProcessStatus('PHAL', callback_map=callbacks)
         self._watchdog = watchdog # TODO implement
         if not config:
             try:
