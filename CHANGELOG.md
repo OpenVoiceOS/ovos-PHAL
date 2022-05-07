@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos_PHAL/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2a2...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2a3...HEAD)
+
+**Merged pull requests:**
+
+- notify matrix chat on PR merged [\#5](https://github.com/OpenVoiceOS/ovos_PHAL/pull/5) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.2a3](https://github.com/OpenVoiceOS/ovos_PHAL/tree/V0.0.2a3) (2022-03-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2a2...V0.0.2a3)
 
 **Implemented enhancements:**
 
