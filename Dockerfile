@@ -16,7 +16,7 @@ COPY . /tmp/ovos-phal
 RUN pip3 install /tmp/ovos-phal
 
 # TODO remove this, missing dependency in ovos-core
-RUN pip3 install python-dateutil ovos-utils==0.0.21a1
+RUN pip3 install pyee==8.1.0 ovos-utils==0.0.21a2
 
 USER mycroft
 ENTRYPOINT ovos_PHAL
