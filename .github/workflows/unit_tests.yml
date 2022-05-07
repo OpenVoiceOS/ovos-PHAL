@@ -17,6 +17,7 @@ on:
   push:
     branches:
       - master
+      - dev
     paths-ignore:
       - 'ovos_PHAL/version.py'
       - 'requirements/**'
