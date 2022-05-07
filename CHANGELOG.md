@@ -1,5 +1,9 @@
 # Changelog
 
+## [V0.0.2a6](https://github.com/OpenVoiceOS/ovos_PHAL/tree/V0.0.2a6) (2022-05-07)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2a5...V0.0.2a6)
+
 ## [V0.0.2a5](https://github.com/OpenVoiceOS/ovos_PHAL/tree/V0.0.2a5) (2022-05-07)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2a4...V0.0.2a5)
