@@ -12,6 +12,7 @@ on:
       - '.github/**'
       - '.gitignore'
       - 'LICENSE'
+      - 'Dockerfile'
       - 'CHANGELOG.md'
       - 'MANIFEST.in'
       - 'readme.md'
