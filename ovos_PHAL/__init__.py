@@ -1,7 +1,6 @@
 from ovos_workshop import OVOSAbstractApplication
 from ovos_plugin_manager.phal import find_phal_plugins, PHALPlugin
 from ovos_utils.messagebus import get_mycroft_bus
-from ovos_utils import wait_for_exit_signal
 from ovos_utils.log import LOG
 from ovos_utils.configuration import read_mycroft_config
 from ovos_utils.process_utils import ProcessStatus, StatusCallbackMap
@@ -81,8 +80,9 @@ class PHAL(OVOSAbstractApplication):
         try:
             self.load_plugins()
             self.status.set_ready()
-            wait_for_exit_signal()
         except Exception as e:
             self.status.set_error(e)
+
+    def shutdown(self):
         self.status.set_stopping()
 
