@@ -19,6 +19,14 @@ def on_error(e='Unknown'):
     LOG.error(f'PHAL failed to launch ({e}).')
 
 
+def on_alive():
+    LOG.info('PHAL is alive')
+
+
+def on_started():
+    LOG.info('PHAL is started')
+
+
 class PHAL(OVOSAbstractApplication):
     """
     Args:
@@ -27,15 +35,20 @@ class PHAL(OVOSAbstractApplication):
         watchdog: (callable) function to call periodically indicating
                   operational status.
     """
-
     def __init__(self, config=None, bus=None,
                  on_ready=on_ready, on_error=on_error,
-                 on_stopping=on_stopping, watchdog=lambda: None):
+                 on_stopping=on_stopping, watchdog=lambda: None, **kwargs):
         super().__init__(skill_id="ovos.PHAL")
-
-        callbacks = StatusCallbackMap(on_ready=on_ready,
-                                      on_error=on_error,
-                                      on_stopping=on_stopping)
+        ready_hook = kwargs.get('ready_hook', on_ready)
+        error_hook = kwargs.get('error_hook', on_error)
+        stopping_hook = kwargs.get('stopping_hook', on_stopping)
+        alive_hook = kwargs.get('alive_hook', on_alive)
+        started_hook = kwargs.get('started_hook', on_started)
+        callbacks = StatusCallbackMap(on_ready=ready_hook,
+                                      on_error=error_hook,
+                                      on_stopping=stopping_hook,
+                                      on_alive=alive_hook,
+                                      on_started=started_hook)
         self.status = ProcessStatus('PHAL', callback_map=callbacks)
         self._watchdog = watchdog # TODO implement
         if not config:
