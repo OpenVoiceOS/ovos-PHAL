@@ -1,5 +1,17 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos_PHAL/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2...HEAD)
+
+**Fixed bugs:**
+
+- Add kwargs handling to accept same arguments as services in ovos-core [\#6](https://github.com/OpenVoiceOS/ovos_PHAL/pull/6) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.2](https://github.com/OpenVoiceOS/ovos_PHAL/tree/V0.0.2) (2022-07-13)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2a10...V0.0.2)
+
 ## [V0.0.2a10](https://github.com/OpenVoiceOS/ovos_PHAL/tree/V0.0.2a10) (2022-07-13)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2a9...V0.0.2a10)
