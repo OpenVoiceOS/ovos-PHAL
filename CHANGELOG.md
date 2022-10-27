@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos_PHAL/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.3a1...HEAD)
+
+**Merged pull requests:**
+
+- Update dependencies to stable versions [\#7](https://github.com/OpenVoiceOS/ovos_PHAL/pull/7) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.3a1](https://github.com/OpenVoiceOS/ovos_PHAL/tree/V0.0.3a1) (2022-10-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.2...V0.0.3a1)
 
 **Fixed bugs:**
 
