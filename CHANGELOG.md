@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos_PHAL/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.3a1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.3a2...HEAD)
+
+**Merged pull requests:**
+
+- Update license tests automation [\#8](https://github.com/OpenVoiceOS/ovos_PHAL/pull/8) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.3a2](https://github.com/OpenVoiceOS/ovos_PHAL/tree/V0.0.3a2) (2022-10-27)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos_PHAL/compare/V0.0.3a1...V0.0.3a2)
 
 **Merged pull requests:**
 
