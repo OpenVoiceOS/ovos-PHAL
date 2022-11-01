@@ -54,7 +54,7 @@ setup(
     packages=['ovos_PHAL'],
     install_requires=required("requirements/requirements.txt"),
     package_data={'': package_files('ovos_PHAL')},
-    url='https://github.com/OpenVoiceOS/PHAL',
+    url='https://github.com/OpenVoiceOS/ovos-PHAL',
     license='apache-2.0',
     author='jarbasAi',
     author_email='jarbasai@mailfence.com',
