@@ -1,12 +1,12 @@
 # Changelog
 
+## [V0.0.4a2](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.4a2) (2022-11-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.4a1...V0.0.4a2)
+
 ## [V0.0.4a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.4a1) (2022-11-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.3...V0.0.4a1)
-
-**Implemented enhancements:**
-
-- feat/admin\_service [\#9](https://github.com/OpenVoiceOS/ovos-PHAL/pull/9) ([JarbasAl](https://github.com/JarbasAl))
 
 ## [V0.0.3](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.3) (2022-10-27)
 
