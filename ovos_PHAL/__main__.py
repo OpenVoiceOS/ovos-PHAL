@@ -1,4 +1,4 @@
-from ovos_PHAL import PHAL, on_ready, on_error, on_stopping
+from ovos_PHAL.service import PHAL, on_ready, on_error, on_stopping
 
 from ovos_utils import wait_for_exit_signal
 
