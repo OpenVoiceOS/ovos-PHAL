@@ -1,5 +1,21 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.4a3...HEAD)
+
+**Closed issues:**
+
+- problem with download in buildroot [\#10](https://github.com/OpenVoiceOS/ovos-PHAL/issues/10)
+
+**Merged pull requests:**
+
+- Update OPM dependency to stable version [\#11](https://github.com/OpenVoiceOS/ovos-PHAL/pull/11) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.4a3](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.4a3) (2022-11-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.4a2...V0.0.4a3)
+
 ## [V0.0.4a2](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.4a2) (2022-11-01)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.4a1...V0.0.4a2)
