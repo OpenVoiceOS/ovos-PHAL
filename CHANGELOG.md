@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL/tree/HEAD)
+## [V0.0.4a4](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.4a4) (2022-11-16)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.4a3...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.4a3...V0.0.4a4)
 
 **Closed issues:**
 
