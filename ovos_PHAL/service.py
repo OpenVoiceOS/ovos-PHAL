@@ -1,4 +1,5 @@
 from ovos_plugin_manager.phal import find_phal_plugins
+from ovos_utils import wait_for_exit_signal
 from ovos_utils.configuration import read_mycroft_config
 from ovos_utils.log import LOG
 from ovos_utils.messagebus import get_mycroft_bus
@@ -87,3 +88,19 @@ class PHAL(OVOSAbstractApplication):
 
     def shutdown(self):
         self.status.set_stopping()
+
+
+def main(ready_hook=on_ready, error_hook=on_error, stopping_hook=on_stopping):
+    # config read from mycroft.conf
+    # "PHAL": {
+    #     "ovos-PHAL-plugin-display-manager-ipc": {"enabled": true},
+    #     "ovos-PHAL-plugin-mk1": {"enabled": True}
+    # }
+    phal = PHAL(on_error=error_hook, on_ready=ready_hook, on_stopping=stopping_hook)
+    phal.start()
+    wait_for_exit_signal()
+    phal.shutdown()
+
+
+if __name__ == "__main__":
+    main()

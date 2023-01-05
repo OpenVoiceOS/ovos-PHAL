@@ -61,7 +61,7 @@ setup(
     include_package_data=True,
     entry_points={
         'console_scripts': [
-            'ovos_PHAL=ovos_PHAL.__main__:main',
+            'ovos_PHAL=ovos_PHAL.service:main',
             'ovos_PHAL_admin=ovos_PHAL.admin:main'
         ]
     }
