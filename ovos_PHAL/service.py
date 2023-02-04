@@ -3,6 +3,8 @@ from ovos_utils.configuration import read_mycroft_config
 from ovos_utils.log import LOG
 from ovos_utils.messagebus import get_mycroft_bus
 from ovos_utils.process_utils import ProcessStatus, StatusCallbackMap
+from ovos_utils.network_utils import is_connected
+from threading import Event, Lock
 from ovos_workshop import OVOSAbstractApplication
 
 
@@ -61,25 +63,50 @@ class PHAL(OVOSAbstractApplication):
         self.bus = bus or get_mycroft_bus()
         self.drivers = {}
         self.status.bind(self.bus)
+        self.network_ready = Event()
+        self.internet_ready = Event()
+        self._lock = Lock()
+
+    def handle_network(self, message):
+        self.network_ready.set()
+        self.load_plugins()
+
+    def handle_internet(self, message):
+        self.internet_ready.set()
+        self.load_plugins()
 
     def load_plugins(self):
-        for name, plug in find_phal_plugins().items():
-            config = self.config.get(name) or {}
-            if hasattr(plug, "validator"):
-                enabled = plug.validator.validate(config)
-            else:
-                enabled = config.get("enabled")
-            if enabled:
-                try:
-                    self.drivers[name] = plug(bus=self.bus, config=config)
-                    LOG.info(f"PHAL plugin loaded: {name}")
-                except Exception:
-                    LOG.exception(f"failed to load PHAL plugin: {name}")
-                    continue
+        with self._lock:
+            for name, plug in find_phal_plugins().items():
+                if name in self.drivers:
+                    continue  # already loaded
+
+                config = self.config.get(name) or {}
+                if hasattr(plug, "validator"):
+                    enabled = plug.validator.validate(config)
+                else:
+                    enabled = config.get("enabled")
+                if enabled:
+                    if plug.network_requirements.network_before_load and not self.network_ready.is_set():
+                        continue
+                    if plug.network_requirements.internet_before_load and not self.internet_ready.is_set():
+                        continue
+                    try:
+                        self.drivers[name] = plug(bus=self.bus, config=config)
+                        LOG.info(f"PHAL plugin loaded: {name}")
+                    except Exception:
+                        LOG.exception(f"failed to load PHAL plugin: {name}")
+                        continue
 
     def start(self):
         self.status.set_started()
         try:
+            if is_connected():
+                self.network_ready.set()
+                self.internet_ready.set()
+            else:
+                self.bus.once("mycroft.network.connected", self.handle_network)
+                self.bus.once("mycroft.internet.connected", self.handle_internet)
             self.load_plugins()
             self.status.set_ready()
         except Exception as e:
