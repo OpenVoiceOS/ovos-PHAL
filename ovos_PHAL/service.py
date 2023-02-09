@@ -87,9 +87,9 @@ class PHAL(OVOSAbstractApplication):
                 else:
                     enabled = config.get("enabled")
                 if enabled:
-                    if plug.network_requirements.network_before_load and not self.network_ready.is_set():
+                    if plug.runtime_requirements.network_before_load and not self.network_ready.is_set():
                         continue
-                    if plug.network_requirements.internet_before_load and not self.internet_ready.is_set():
+                    if plug.runtime_requirements.internet_before_load and not self.internet_ready.is_set():
                         continue
                     try:
                         self.drivers[name] = plug(bus=self.bus, config=config)
