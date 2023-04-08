@@ -1,8 +1,8 @@
-ovos-utils~=0.0, >=0.0.31a3
-ovos-bus-client~=0.0, >=0.0.3a4
+ovos-utils~=0.0, >=0.0.31a6
+ovos-bus-client~=0.0, >=0.0.3a10
 ovos_workshop~=0.0, >=0.0.12a3
-ovos-config~=0.0,>=0.0.8a2
-ovos-plugin-manager~=0.0, >=0.0.20
+ovos-config~=0.0,>=0.0.8a3
+ovos-plugin-manager~=0.0, >=0.0.23a5
 
 ovos-phal-plugin-connectivity-events~=0.0, >=0.0.1
 ovos-PHAL-plugin-wallpaper-manager~=0.0, >=0.0.0
