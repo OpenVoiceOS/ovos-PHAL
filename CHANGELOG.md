@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a1...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a2...HEAD)
+
+**Merged pull requests:**
+
+- bump requirements.txt [\#16](https://github.com/OpenVoiceOS/ovos-PHAL/pull/16) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.5a2](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a2) (2023-04-05)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a1...V0.0.5a2)
 
 **Merged pull requests:**
 
