@@ -1,6 +1,6 @@
 from ovos_plugin_manager.phal import find_admin_plugins
 from ovos_utils import wait_for_exit_signal
-from ovos_utils.configuration import read_mycroft_config
+from ovos_config import Configuration
 from ovos_utils.log import LOG
 
 from ovos_PHAL import PHAL
@@ -40,7 +40,7 @@ class AdminPHAL(PHAL):
                  watchdog=lambda: None, name="PHAL.admin", **kwargs):
         if not config:
             try:
-                config = read_mycroft_config()
+                config = Configuration()
                 config = config.get("PHAL", {}).get("admin", {})
             except:
                 config = {}
