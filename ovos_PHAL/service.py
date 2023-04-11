@@ -1,7 +1,7 @@
 from ovos_plugin_manager.phal import find_phal_plugins
-from ovos_utils.configuration import read_mycroft_config
+from ovos_config import Configuration
 from ovos_utils.log import LOG
-from ovos_utils.messagebus import get_mycroft_bus
+from ovos_bus_client.client import MessageBusClient
 from ovos_utils.process_utils import ProcessStatus, StatusCallbackMap
 from ovos_workshop import OVOSAbstractApplication
 
@@ -52,13 +52,11 @@ class PHAL(OVOSAbstractApplication):
                                       on_started=started_hook)
         self.status = ProcessStatus(name, callback_map=callbacks)
         self._watchdog = watchdog  # TODO implement
-        if not config:
-            try:
-                config = read_mycroft_config()["PHAL"]
-            except:
-                config = {}
-        self.config = config
-        self.bus = bus or get_mycroft_bus()
+        self.config = config or Configuration().get("PHAL") or {}
+        if not bus:
+            bus = MessageBusClient()
+            bus.run_in_thread()
+        self.bus = bus
         self.drivers = {}
         self.status.bind(self.bus)
 
@@ -83,6 +81,7 @@ class PHAL(OVOSAbstractApplication):
             self.load_plugins()
             self.status.set_ready()
         except Exception as e:
+            LOG.exception(e)
             self.status.set_error(e)
 
     def shutdown(self):
