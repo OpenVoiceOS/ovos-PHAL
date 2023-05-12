@@ -63,6 +63,7 @@ setup(
     url='https://github.com/OpenVoiceOS/ovos-PHAL',
     description="Plugin based Hardware Abstraction Layer for OVOS",
     long_description=long_description,
+    long_description_content_type="text/markdown",
     license='apache-2.0',
     author='jarbasAi',
     author_email='jarbasai@mailfence.com',
