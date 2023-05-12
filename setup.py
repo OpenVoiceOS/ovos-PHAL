@@ -48,6 +48,12 @@ def required(requirements_file):
                 if pkg.strip() and not pkg.startswith("#")]
 
 
+long_description = ""
+if os.path.isfile(os.path.join(BASEDIR, "README.md")):
+    with open(os.path.join(BASEDIR, "README.md"), "r") as f:
+        long_description = f.read()
+
+
 setup(
     name='ovos_PHAL',
     version=get_version(),
@@ -55,6 +61,9 @@ setup(
     install_requires=required("requirements/requirements.txt"),
     package_data={'': package_files('ovos_PHAL')},
     url='https://github.com/OpenVoiceOS/ovos-PHAL',
+    description="Plugin based Hardware Abstraction Layer for OVOS",
+    long_description=long_description,
+    long_description_content_type="text/markdown",
     license='apache-2.0',
     author='jarbasAi',
     author_email='jarbasai@mailfence.com',
