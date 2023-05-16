@@ -5,11 +5,8 @@ ovos-config~=0.0,>=0.0.8a3
 ovos-plugin-manager~=0.0, >=0.0.23a5
 
 ovos-phal-plugin-connectivity-events~=0.0, >=0.0.1
-ovos-PHAL-plugin-wallpaper-manager~=0.0, >=0.0.0
-# ovos-PHAL-plugin-brightness-control-rpi~=0.0, >=0.0.1
 ovos-PHAL-plugin-network-manager~=1.0, >=1.0.0
 ovos-phal-plugin-ipgeo~=0.0, >=0.0.1
 ovos-PHAL-plugin-oauth~=0.0, >=0.0.1
 # ovos-PHAL-plugin-alsa~=0.0, >=0.0.1
 ovos-PHAL-plugin-system~=0.0, >=0.0.1
-ovos-PHAL-plugin-color-scheme-manager~=1.0, >=1.0.0
