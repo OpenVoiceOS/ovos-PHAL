@@ -1,7 +1,7 @@
 from ovos_plugin_manager.phal import find_admin_plugins
 from ovos_utils import wait_for_exit_signal
 from ovos_config import Configuration
-from ovos_utils.log import LOG
+from ovos_utils.log import LOG, init_service_logger
 
 from ovos_PHAL import PHAL
 
@@ -71,6 +71,7 @@ def main(ready_hook=on_admin_ready, error_hook=on_admin_error, stopping_hook=on_
     #     "ovos-PHAL-plugin-system": {"enabled": True}
     #   }
     # }
+    init_service_logger("PHAL_admin")
     phal = AdminPHAL(on_error=error_hook, on_ready=ready_hook, on_stopping=stopping_hook)
     phal.start()
     wait_for_exit_signal()
