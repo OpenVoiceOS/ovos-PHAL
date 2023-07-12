@@ -1,12 +1,5 @@
-ovos-utils~=0.0, >=0.0.31a6
-ovos-bus-client>=0.0.3a16,~=0.0
-ovos_workshop~=0.0, >=0.0.12a3
-ovos-config~=0.0,>=0.0.8a3
-ovos-plugin-manager~=0.0, >=0.0.23a5
-
-ovos-phal-plugin-connectivity-events~=0.0, >=0.0.1
-ovos-PHAL-plugin-network-manager~=1.0, >=1.0.0
-ovos-phal-plugin-ipgeo~=0.0, >=0.0.1
-ovos-PHAL-plugin-oauth~=0.0, >=0.0.1
-# ovos-PHAL-plugin-alsa~=0.0, >=0.0.1
-ovos-PHAL-plugin-system~=0.0, >=0.0.1
+ovos-utils<0.1.0, >=0.0.35a7
+ovos_bus_client<0.1.0, >=0.0.5
+ovos_workshop~=0.0, >=0.0.12a38
+ovos-config~=0.0,>=0.0.11a3
+ovos-plugin-manager~=0.0, >=0.0.24a5
