@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a8...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a9...HEAD)
+
+**Merged pull requests:**
+
+- rm deprecation logs name == skill\_id [\#21](https://github.com/OpenVoiceOS/ovos-PHAL/pull/21) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.5a9](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a9) (2023-07-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a8...V0.0.5a9)
 
 **Merged pull requests:**
 
