@@ -38,8 +38,11 @@ class PHAL(OVOSAbstractApplication):
     def __init__(self, config=None, bus=None,
                  on_ready=on_ready, on_error=on_error,
                  on_stopping=on_stopping, on_started=on_started, on_alive=on_alive,
-                 watchdog=lambda: None, name="PHAL", **kwargs):
-        super().__init__(skill_id=f"ovos.{name}")
+                 watchdog=lambda: None, skill_id="ovos.PHAL", **kwargs):
+        if not bus:
+            bus = MessageBusClient()
+            bus.run_in_thread()
+        super().__init__(skill_id=skill_id, bus=bus)
         ready_hook = kwargs.get('ready_hook', on_ready)
         error_hook = kwargs.get('error_hook', on_error)
         stopping_hook = kwargs.get('stopping_hook', on_stopping)
@@ -50,13 +53,9 @@ class PHAL(OVOSAbstractApplication):
                                       on_stopping=stopping_hook,
                                       on_alive=alive_hook,
                                       on_started=started_hook)
-        self.status = ProcessStatus(name, callback_map=callbacks)
+        self.status = ProcessStatus("PHAL", callback_map=callbacks)
         self._watchdog = watchdog  # TODO implement
         self.config = config or Configuration().get("PHAL") or {}
-        if not bus:
-            bus = MessageBusClient()
-            bus.run_in_thread()
-        self.bus = bus
         self.drivers = {}
         self.status.bind(self.bus)
 
