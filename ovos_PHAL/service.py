@@ -3,7 +3,6 @@ from ovos_config import Configuration
 from ovos_utils.log import LOG
 from ovos_bus_client.client import MessageBusClient
 from ovos_utils.process_utils import ProcessStatus, StatusCallbackMap
-from ovos_workshop import OVOSAbstractApplication
 
 
 def on_ready():
@@ -26,7 +25,7 @@ def on_started():
     LOG.info('PHAL is started')
 
 
-class PHAL(OVOSAbstractApplication):
+class PHAL:
     """
     Args:
         config (dict): PHAL config, usually from mycroft.conf
@@ -42,7 +41,9 @@ class PHAL(OVOSAbstractApplication):
         if not bus:
             bus = MessageBusClient()
             bus.run_in_thread()
-        super().__init__(skill_id=skill_id, bus=bus)
+        self.skill_id = skill_id
+        self.bus = bus
+
         ready_hook = kwargs.get('ready_hook', on_ready)
         error_hook = kwargs.get('error_hook', on_error)
         stopping_hook = kwargs.get('stopping_hook', on_stopping)
