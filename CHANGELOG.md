@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a10...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a11...HEAD)
+
+**Implemented enhancements:**
+
+- load either user or admin [\#24](https://github.com/OpenVoiceOS/ovos-PHAL/pull/24) ([emphasize](https://github.com/emphasize))
+
+## [V0.0.5a11](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a11) (2023-09-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a10...V0.0.5a11)
 
 **Fixed bugs:**
 
