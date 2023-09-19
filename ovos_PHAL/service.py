@@ -56,13 +56,23 @@ class PHAL:
                                       on_started=started_hook)
         self.status = ProcessStatus("PHAL", callback_map=callbacks)
         self._watchdog = watchdog  # TODO implement
-        self.config = config or Configuration().get("PHAL") or {}
+        self.user_config = config or Configuration().get("PHAL") or {}
+        if "admin" in self.user_config:
+            self.admin_config = self.user_config.pop("admin")
+        else:
+            self.admin_config = {}
         self.drivers = {}
         self.status.bind(self.bus)
 
     def load_plugins(self):
         for name, plug in find_phal_plugins().items():
-            config = self.config.get(name) or {}
+            # load the plugin only if not defined as admin plugin
+            # (for plugins that can be used as admin or user plugins)
+            if name in self.admin_config:
+                LOG.debug(f"PHAL plugin {name} runs as admin plugin, skipping")
+                continue
+
+            config = self.user_config.get(name) or {}
             if hasattr(plug, "validator"):
                 enabled = plug.validator.validate(config)
             else:

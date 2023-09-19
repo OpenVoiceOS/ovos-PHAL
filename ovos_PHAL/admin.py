@@ -38,17 +38,19 @@ class AdminPHAL(PHAL):
     def __init__(self, config=None, bus=None, on_ready=on_admin_ready, on_error=on_admin_error,
                  on_stopping=on_admin_stopping, on_started=on_admin_started, on_alive=on_admin_alive,
                  watchdog=lambda: None, name="PHAL.admin", **kwargs):
-        if not config:
-            try:
-                config = Configuration()
-                config = config.get("PHAL", {}).get("admin", {})
-            except:
-                config = {}
+        if config and "admin" not in config:
+            config = {"admin": config}
         super().__init__(config, bus, on_ready, on_error, on_stopping, on_started, on_alive, watchdog, name, **kwargs)
 
     def load_plugins(self):
         for name, plug in find_admin_plugins().items():
-            config = self.config.get(name) or {}
+            # load the plugin only if not defined as user plugin
+            # (for plugins that can be used as admin or user plugins)
+            if name in self.user_config:
+                LOG.debug(f"PHAL plugin {name} runs as user plugin, skipping")
+                continue
+
+            config = self.admin_config.get(name) or {}
             enabled = config.get("enabled")
             if not enabled:
                 continue  # require explicit enabling by user
