@@ -40,7 +40,7 @@ class AdminPHAL(PHAL):
                  watchdog=lambda: None, skill_id="PHAL.admin", **kwargs):
         if config and "admin" not in config:
             config = {"admin": config}
-        super().__init__(config, bus, on_ready, on_error, on_stopping, on_started, on_alive, watchdog, name, **kwargs)
+        super().__init__(config, bus, on_ready, on_error, on_stopping, on_started, on_alive, watchdog, skill_id, **kwargs)
 
     def load_plugins(self):
         for name, plug in find_admin_plugins().items():
