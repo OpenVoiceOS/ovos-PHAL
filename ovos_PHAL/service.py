@@ -37,7 +37,7 @@ class PHAL:
     def __init__(self, config=None, bus=None,
                  on_ready=on_ready, on_error=on_error,
                  on_stopping=on_stopping, on_started=on_started, on_alive=on_alive,
-                 watchdog=lambda: None, skill_id="ovos.PHAL", **kwargs):
+                 watchdog=lambda: None, skill_id="PHAL", **kwargs):
         if not bus:
             bus = MessageBusClient()
             bus.run_in_thread()
@@ -54,7 +54,7 @@ class PHAL:
                                       on_stopping=stopping_hook,
                                       on_alive=alive_hook,
                                       on_started=started_hook)
-        self.status = ProcessStatus("PHAL", callback_map=callbacks)
+        self.status = ProcessStatus(skill_id, callback_map=callbacks)
         self._watchdog = watchdog  # TODO implement
         self.user_config = config or Configuration().get("PHAL") or {}
         if "admin" in self.user_config:
