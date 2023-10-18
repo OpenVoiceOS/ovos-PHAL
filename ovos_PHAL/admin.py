@@ -37,7 +37,7 @@ class AdminPHAL(PHAL):
 
     def __init__(self, config=None, bus=None, on_ready=on_admin_ready, on_error=on_admin_error,
                  on_stopping=on_admin_stopping, on_started=on_admin_started, on_alive=on_admin_alive,
-                 watchdog=lambda: None, name="PHAL.admin", **kwargs):
+                 watchdog=lambda: None, skill_id="PHAL.admin", **kwargs):
         if config and "admin" not in config:
             config = {"admin": config}
         super().__init__(config, bus, on_ready, on_error, on_stopping, on_started, on_alive, watchdog, name, **kwargs)
