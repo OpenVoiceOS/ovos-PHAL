@@ -1,9 +1,8 @@
 from ovos_plugin_manager.phal import find_phal_plugins
-from ovos_utils.configuration import read_mycroft_config
+from ovos_config import Configuration
 from ovos_utils.log import LOG
-from ovos_utils.messagebus import get_mycroft_bus
+from ovos_bus_client.client import MessageBusClient
 from ovos_utils.process_utils import ProcessStatus, StatusCallbackMap
-from ovos_workshop import OVOSAbstractApplication
 
 
 def on_ready():
@@ -26,7 +25,7 @@ def on_started():
     LOG.info('PHAL is started')
 
 
-class PHAL(OVOSAbstractApplication):
+class PHAL:
     """
     Args:
         config (dict): PHAL config, usually from mycroft.conf
@@ -38,8 +37,13 @@ class PHAL(OVOSAbstractApplication):
     def __init__(self, config=None, bus=None,
                  on_ready=on_ready, on_error=on_error,
                  on_stopping=on_stopping, on_started=on_started, on_alive=on_alive,
-                 watchdog=lambda: None, name="PHAL", **kwargs):
-        super().__init__(skill_id=f"ovos.{name}")
+                 watchdog=lambda: None, skill_id="PHAL", **kwargs):
+        if not bus:
+            bus = MessageBusClient()
+            bus.run_in_thread()
+        self.skill_id = skill_id
+        self.bus = bus
+
         ready_hook = kwargs.get('ready_hook', on_ready)
         error_hook = kwargs.get('error_hook', on_error)
         stopping_hook = kwargs.get('stopping_hook', on_stopping)
@@ -50,21 +54,25 @@ class PHAL(OVOSAbstractApplication):
                                       on_stopping=stopping_hook,
                                       on_alive=alive_hook,
                                       on_started=started_hook)
-        self.status = ProcessStatus(name, callback_map=callbacks)
+        self.status = ProcessStatus(skill_id, callback_map=callbacks)
         self._watchdog = watchdog  # TODO implement
-        if not config:
-            try:
-                config = read_mycroft_config()["PHAL"]
-            except:
-                config = {}
-        self.config = config
-        self.bus = bus or get_mycroft_bus()
+        self.user_config = config or Configuration().get("PHAL") or {}
+        if "admin" in self.user_config:
+            self.admin_config = self.user_config.pop("admin")
+        else:
+            self.admin_config = {}
         self.drivers = {}
         self.status.bind(self.bus)
 
     def load_plugins(self):
         for name, plug in find_phal_plugins().items():
-            config = self.config.get(name) or {}
+            # load the plugin only if not defined as admin plugin
+            # (for plugins that can be used as admin or user plugins)
+            if name in self.admin_config:
+                LOG.debug(f"PHAL plugin {name} runs as admin plugin, skipping")
+                continue
+
+            config = self.user_config.get(name) or {}
             if hasattr(plug, "validator"):
                 enabled = plug.validator.validate(config)
             else:
@@ -83,6 +91,7 @@ class PHAL(OVOSAbstractApplication):
             self.load_plugins()
             self.status.set_ready()
         except Exception as e:
+            LOG.exception(e)
             self.status.set_error(e)
 
     def shutdown(self):

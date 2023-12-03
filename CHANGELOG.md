@@ -1,5 +1,101 @@
 # Changelog
 
+## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL/tree/HEAD)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a12...HEAD)
+
+**Fixed bugs:**
+
+- fix/PHAL admin service status [\#25](https://github.com/OpenVoiceOS/ovos-PHAL/pull/25) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.5a12](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a12) (2023-09-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a11...V0.0.5a12)
+
+**Implemented enhancements:**
+
+- load either user or admin [\#24](https://github.com/OpenVoiceOS/ovos-PHAL/pull/24) ([emphasize](https://github.com/emphasize))
+
+## [V0.0.5a11](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a11) (2023-09-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a10...V0.0.5a11)
+
+**Fixed bugs:**
+
+- fix/no\_need\_to\_subclass [\#23](https://github.com/OpenVoiceOS/ovos-PHAL/pull/23) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.5a10](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a10) (2023-07-14)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a9...V0.0.5a10)
+
+**Merged pull requests:**
+
+- rm deprecation logs name == skill\_id [\#21](https://github.com/OpenVoiceOS/ovos-PHAL/pull/21) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.5a9](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a9) (2023-07-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a8...V0.0.5a9)
+
+**Merged pull requests:**
+
+- Update requirements.txt [\#20](https://github.com/OpenVoiceOS/ovos-PHAL/pull/20) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.5a8](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a8) (2023-07-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a7...V0.0.5a8)
+
+## [V0.0.5a7](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a7) (2023-07-03)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a6...V0.0.5a7)
+
+## [V0.0.5a6](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a6) (2023-05-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a5...V0.0.5a6)
+
+**Merged pull requests:**
+
+- Update requirements.txt [\#19](https://github.com/OpenVoiceOS/ovos-PHAL/pull/19) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.5a5](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a5) (2023-05-12)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a4...V0.0.5a5)
+
+**Merged pull requests:**
+
+- add project description [\#18](https://github.com/OpenVoiceOS/ovos-PHAL/pull/18) ([emphasize](https://github.com/emphasize))
+
+## [V0.0.5a4](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a4) (2023-04-11)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a3...V0.0.5a4)
+
+**Merged pull requests:**
+
+- refactor/update\_imports [\#17](https://github.com/OpenVoiceOS/ovos-PHAL/pull/17) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.5a3](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a3) (2023-04-08)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a2...V0.0.5a3)
+
+**Merged pull requests:**
+
+- bump requirements.txt [\#16](https://github.com/OpenVoiceOS/ovos-PHAL/pull/16) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.5a2](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a2) (2023-04-05)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a1...V0.0.5a2)
+
+**Merged pull requests:**
+
+- bump requirements.txt [\#15](https://github.com/OpenVoiceOS/ovos-PHAL/pull/15) ([JarbasAl](https://github.com/JarbasAl))
+
+## [V0.0.5a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a1) (2023-04-04)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.4...V0.0.5a1)
+
+## [V0.0.4](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.4) (2022-11-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.4a4...V0.0.4)
+
 ## [V0.0.4a4](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.4a4) (2022-11-16)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.4a3...V0.0.4a4)
