@@ -1,4 +1,5 @@
 import subprocess
+from ovos_utils.log import deprecated
 
 
 def is_mycroft_sj201_v6():
@@ -7,6 +8,11 @@ def is_mycroft_sj201_v6():
     if out == b"04" or out == b"UU":
         return True
     return False
+
+
+@deprecated("Use is_mycroft_sj201_v6", "0.2.0")
+def is_mycroft_sj201():
+    return is_mycroft_sj201_v6()
 
 
 def is_respeaker_2mic():
