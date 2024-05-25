@@ -1,7 +1,7 @@
 import subprocess
 
 
-def is_mycroft_sj201():
+def is_mycroft_sj201_v6():
     cmd = 'i2cdetect -y -a 1 0x04 0x04 | egrep "(04|UU)" | awk \'{print $2}\''
     out = subprocess.check_output(cmd, shell=True).strip()
     if out == b"04" or out == b"UU":
@@ -45,5 +45,11 @@ def is_texas_tas5806():
     cmd = 'i2cdetect -y -a 0x2f 0x2f | egrep "(2f|UU)" | awk \'{print $2}\''
     out = subprocess.check_output(cmd, shell=True).strip()
     if out == b"2f" or out == b"UU":
+        return True
+    return False
+
+
+def is_mycroft_sj201_v10():
+    if is_texas_tas5806 and not is_mycroft_sj201_v6:
         return True
     return False
