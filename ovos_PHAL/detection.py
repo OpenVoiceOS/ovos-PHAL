@@ -1,5 +1,5 @@
 import subprocess
-from ovos_utils.log import LOG, log_deprecation, deprecated
+from ovos_utils.log import deprecated
 
 
 @deprecated("ovos_PHAL.detection module has been deprecated! use https://github.com/OpenVoiceOS/ovos-i2c-detection instead ", "0.2.0")
