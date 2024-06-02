@@ -2,7 +2,19 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a14...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a15...HEAD)
+
+**Closed issues:**
+
+- ovos\_PHAL\_admin doesn't start because of combo\_lock. [\#29](https://github.com/OpenVoiceOS/ovos-PHAL/issues/29)
+
+**Merged pull requests:**
+
+- sj201 v6 and v10 division [\#32](https://github.com/OpenVoiceOS/ovos-PHAL/pull/32) ([builderjer](https://github.com/builderjer))
+
+## [V0.0.5a15](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a15) (2023-12-29)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a14...V0.0.5a15)
 
 **Merged pull requests:**
 
