@@ -73,10 +73,19 @@ class PHAL:
                 continue
 
             config = self.user_config.get(name) or {}
+            if config.get("enabled") is False:
+                # Configuration explicitly disabled plugin
+                LOG.debug(f"PHAL plugin {name} disabled in configuration")
+                continue
             if hasattr(plug, "validator"):
-                enabled = plug.validator.validate(config)
+                try:
+                    enabled = plug.validator.validate(config)
+                except Exception:
+                    LOG.exception(f"Validator failed for PHAL plugin: {name}")
+                    continue
             else:
-                enabled = config.get("enabled")
+                # Already checked if enabled == False, default to True
+                enabled = True
             if enabled:
                 try:
                     self.drivers[name] = plug(bus=self.bus, config=config)
