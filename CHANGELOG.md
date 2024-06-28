@@ -2,7 +2,15 @@
 
 ## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL/tree/HEAD)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a15...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a16...HEAD)
+
+**Merged pull requests:**
+
+- Support `enabled: False` config for plugins with validators [\#35](https://github.com/OpenVoiceOS/ovos-PHAL/pull/35) ([NeonDaniel](https://github.com/NeonDaniel))
+
+## [V0.0.5a16](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a16) (2024-06-02)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a15...V0.0.5a16)
 
 **Closed issues:**
 
