@@ -48,7 +48,7 @@ class TestService(unittest.TestCase):
         # Test without validators
         self.service.load_plugins()
         self.assertEqual(set(self.service.drivers.keys()),
-                         {"mock_enabled_plugin"})
+                         {"mock_plugin", "mock_enabled_plugin"})
         self.service.drivers = {}
 
         # Tests with passing validators

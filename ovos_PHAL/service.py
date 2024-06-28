@@ -84,8 +84,8 @@ class PHAL:
                     LOG.exception(f"Validator failed for PHAL plugin: {name}")
                     continue
             else:
-                # No validator, check if plugin is explicitly enabled
-                enabled = config.get("enabled")
+                # Already checked if enabled == False, default to True
+                enabled = True
             if enabled:
                 try:
                     self.drivers[name] = plug(bus=self.bus, config=config)
