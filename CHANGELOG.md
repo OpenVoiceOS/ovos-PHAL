@@ -1,8 +1,8 @@
 # Changelog
 
-## [Unreleased](https://github.com/OpenVoiceOS/ovos-PHAL/tree/HEAD)
+## [V0.0.5a17](https://github.com/OpenVoiceOS/ovos-PHAL/tree/V0.0.5a17) (2024-06-28)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a16...HEAD)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5a16...V0.0.5a17)
 
 **Merged pull requests:**
 
