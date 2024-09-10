@@ -2,11 +2,11 @@
 
 ## [0.1.0a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.1.0a1) (2024-09-10)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/V0.0.5...0.1.0a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.1.0...0.1.0a1)
 
 **Merged pull requests:**
 
-- chore:semver\_automations [\#36](https://github.com/OpenVoiceOS/ovos-PHAL/pull/36) ([JarbasAl](https://github.com/JarbasAl))
+- chore:semver\_versioning [\#38](https://github.com/OpenVoiceOS/ovos-PHAL/pull/38) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
