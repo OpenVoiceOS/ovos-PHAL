@@ -1,0 +1,3 @@
+ovos-phal-plugin-alsa
+ovos-phal-plugin-system
+ovos-PHAL-plugin-network-manager

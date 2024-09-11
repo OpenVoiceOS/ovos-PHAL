@@ -59,6 +59,11 @@ setup(
     version=get_version(),
     packages=['ovos_PHAL'],
     install_requires=required("requirements/requirements.txt"),
+    extras_require={
+        "extras": required("requirements/extras.txt"),
+        "linux": required("requirements/linux.txt"),
+        "mac": required("requirements/mac.txt")
+    },
     package_data={'': package_files('ovos_PHAL')},
     url='https://github.com/OpenVoiceOS/ovos-PHAL',
     description="Plugin based Hardware Abstraction Layer for OVOS",

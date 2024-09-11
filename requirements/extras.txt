@@ -1,0 +1,3 @@
+ovos-phal-plugin-ipgeo
+ovos-PHAL-plugin-connectivity-events
+ovos-PHAL-plugin-oauth
