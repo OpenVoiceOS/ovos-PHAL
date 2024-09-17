@@ -1,1 +1,2 @@
 ovos-PHAL-plugin-mk2-fan-control>=0.0.1,<1.0.0
+#git+https://github.com/OVOSHatchery/ovos-PHAL-plugin-sj201-leds
