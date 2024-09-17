@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.2.2a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.2a1) (2024-09-14)
+## [0.2.3a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.3a1) (2024-09-17)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.1...0.2.2a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.2...0.2.3a1)
 
 **Merged pull requests:**
 
-- fix:versions [\#44](https://github.com/OpenVoiceOS/ovos-PHAL/pull/44) ([JarbasAl](https://github.com/JarbasAl))
+- fix:extras [\#46](https://github.com/OpenVoiceOS/ovos-PHAL/pull/46) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
