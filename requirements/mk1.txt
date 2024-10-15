@@ -1,2 +1,2 @@
-ovos-PHAL-plugin-mk1>=0.0.1,<1.0.0
-ovos-PHAL-plugin-balena-wifi>=0.0.1,<1.0.0
+ovos-PHAL-plugin-mk1>=0.1.2,<1.0.0
+ovos-PHAL-plugin-balena-wifi>=1.0.1,<2.0.0
