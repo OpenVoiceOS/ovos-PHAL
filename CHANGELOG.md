@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.2.6a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.6a1) (2024-10-31)
+## [0.2.7a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.7a1) (2024-11-05)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.5...0.2.6a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.6...0.2.7a1)
 
 **Merged pull requests:**
 
-- fix:remove unused dependency [\#53](https://github.com/OpenVoiceOS/ovos-PHAL/pull/53) ([JarbasAl](https://github.com/JarbasAl))
+- fix: allow latest bus client version [\#55](https://github.com/OpenVoiceOS/ovos-PHAL/pull/55) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
