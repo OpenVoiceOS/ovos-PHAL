@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.2.8a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.8a1) (2024-11-25)
+## [0.2.9a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.9a1) (2025-06-08)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.7...0.2.8a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.8...0.2.9a1)
 
 **Merged pull requests:**
 
-- Update ovos-config requirement from \<1.0.0,\>=0.0.12 to \>=0.0.12,\<2.0.0 in /requirements [\#57](https://github.com/OpenVoiceOS/ovos-PHAL/pull/57) ([dependabot[bot]](https://github.com/apps/dependabot))
+- fix: compat with opm 1.X.X [\#59](https://github.com/OpenVoiceOS/ovos-PHAL/pull/59) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
