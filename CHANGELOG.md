@@ -1,12 +1,12 @@
 # Changelog
 
-## [0.2.11a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.11a1) (2025-11-05)
+## [0.2.12a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a1) (2025-12-18)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.10...0.2.11a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.11...0.2.12a1)
 
 **Merged pull requests:**
 
-- Update ovos-plugin-manager version constraint [\#63](https://github.com/OpenVoiceOS/ovos-PHAL/pull/63) ([JarbasAl](https://github.com/JarbasAl))
+- chore: Configure Renovate [\#65](https://github.com/OpenVoiceOS/ovos-PHAL/pull/65) ([renovate[bot]](https://github.com/apps/renovate))
 
 
 
