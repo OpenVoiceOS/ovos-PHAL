@@ -10,19 +10,19 @@
 
 ## [0.2.12a4](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a4) (2025-12-19)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a3...0.2.12a4)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a2...0.2.12a4)
 
 **Merged pull requests:**
 
 - chore\(deps\): update dependency python to 3.14 [\#66](https://github.com/OpenVoiceOS/ovos-PHAL/pull/66) ([renovate[bot]](https://github.com/apps/renovate))
 
-## [0.2.12a3](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a3) (2025-12-19)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a2...0.2.12a3)
-
 ## [0.2.12a2](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a2) (2025-12-19)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a1...0.2.12a2)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a3...0.2.12a2)
+
+## [0.2.12a3](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a1...0.2.12a3)
 
 **Merged pull requests:**
 
