@@ -1,12 +1,41 @@
 # Changelog
 
-## [0.2.11a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.11a1) (2025-11-05)
+## [0.2.12a5](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a5) (2026-03-01)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.10...0.2.11a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a4...0.2.12a5)
 
 **Merged pull requests:**
 
-- Update ovos-plugin-manager version constraint [\#63](https://github.com/OpenVoiceOS/ovos-PHAL/pull/63) ([JarbasAl](https://github.com/JarbasAl))
+- chore: drop deprecated dependencies [\#75](https://github.com/OpenVoiceOS/ovos-PHAL/pull/75) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.2.12a4](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a4) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a2...0.2.12a4)
+
+**Merged pull requests:**
+
+- chore\(deps\): update dependency python to 3.14 [\#66](https://github.com/OpenVoiceOS/ovos-PHAL/pull/66) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.2.12a2](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a2) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a3...0.2.12a2)
+
+## [0.2.12a3](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a3) (2025-12-19)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a1...0.2.12a3)
+
+**Merged pull requests:**
+
+- chore\(deps\): update actions/setup-python action to v6 [\#71](https://github.com/OpenVoiceOS/ovos-PHAL/pull/71) ([renovate[bot]](https://github.com/apps/renovate))
+- chore\(deps\): update actions/checkout action to v6 [\#70](https://github.com/OpenVoiceOS/ovos-PHAL/pull/70) ([renovate[bot]](https://github.com/apps/renovate))
+
+## [0.2.12a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a1) (2025-12-18)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.11...0.2.12a1)
+
+**Merged pull requests:**
+
+- chore: Configure Renovate [\#65](https://github.com/OpenVoiceOS/ovos-PHAL/pull/65) ([renovate[bot]](https://github.com/apps/renovate))
 
 
 
