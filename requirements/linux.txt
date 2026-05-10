@@ -1,4 +1,4 @@
-ovos-phal-plugin-alsa>=0.1.0,<1.0.0
+ovos-phal-plugin-alsa>=0.1.6,<1.0.0
 ovos-phal-plugin-system>=1.0.0,<2.0.0
 ovos-PHAL-plugin-network-manager>=0.3.1,<2.0.0
 
