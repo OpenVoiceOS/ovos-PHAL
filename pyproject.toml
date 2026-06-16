@@ -1,0 +1,68 @@
+[build-system]
+requires = ["setuptools>=61", "wheel"]
+build-backend = "setuptools.build_meta"
+
+[project]
+name = "ovos_PHAL"
+dynamic = ["version"]
+description = "Plugin based Hardware Abstraction Layer for OVOS"
+readme = "README.md"
+license = {text = "Apache-2.0"}
+authors = [
+    {name = "jarbasAi", email = "jarbasai@mailfence.com"}
+]
+keywords = ["ovos", "phal", "plugin"]
+dependencies = [
+    "ovos-utils>=0.0.38,<1.0.0",
+    "ovos_bus_client>=0.0.8,<2.0.0",
+    "ovos-config>=0.0.12,<3.0.0",
+    "ovos-plugin-manager>=0.0.25,<3.0.0"
+]
+
+[project.optional-dependencies]
+extras = [
+    "ovos-phal-plugin-ipgeo>=0.1.1,<1.0.0",
+    "ovos-PHAL-plugin-connectivity-events>=0.1.0,<1.0.0",
+    "ovos-PHAL-plugin-oauth>=0.1.1,<1.0.0"
+]
+linux = [
+    "ovos-phal-plugin-alsa>=0.1.0,<1.0.0",
+    "ovos-phal-plugin-system>=1.0.0,<2.0.0",
+    "ovos-PHAL-plugin-network-manager>=0.3.1,<2.0.0",
+    "ovos-PHAL-plugin-wallpaper-manager>=0.1.2,<1.0.0"
+]
+mac = [
+    "ovos-phal-plugin-mac>=0.0.1,<1.0.0"
+]
+mk1 = [
+    "ovos-PHAL-plugin-mk1>=0.1.2,<1.0.0"
+]
+mk2 = [
+    "ovos-PHAL-plugin-hotkeys>=0.1.1,<1.0.0"
+]
+mk2dev = [
+    "ovos-PHAL-plugin-mk2-fan-control>=0.0.1,<1.0.0"
+]
+test = [
+    "pytest",
+    "pytest-cov"
+]
+
+[project.urls]
+Homepage = "https://github.com/OpenVoiceOS/ovos-PHAL"
+
+[project.scripts]
+ovos_PHAL = "ovos_PHAL.__main__:main"
+ovos_PHAL_admin = "ovos_PHAL.admin:main"
+
+[tool.setuptools.dynamic]
+version = {attr = "ovos_PHAL.version.__version__"}
+
+[tool.setuptools.packages.find]
+where = ["."]
+include = ["ovos_PHAL*"]
+
+[tool.setuptools.package-data]
+ovos_PHAL = [
+    "*.json",
+]
