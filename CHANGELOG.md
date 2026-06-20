@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.15a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.15a1) (2026-06-20)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.14a1...0.2.15a1)
+
+**Merged pull requests:**
+
+- fix: guard AdminPHAL validator.validate so a raising validator skips the plugin [\#93](https://github.com/OpenVoiceOS/ovos-PHAL/pull/93) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.14a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.14a1) (2026-06-20)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.13a2...0.2.14a1)
