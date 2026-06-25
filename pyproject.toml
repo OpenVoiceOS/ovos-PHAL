@@ -21,27 +21,27 @@ dependencies = [
 
 [project.optional-dependencies]
 extras = [
-    "ovos-phal-plugin-ipgeo>=0.1.1,<1.0.0",
-    "ovos-PHAL-plugin-connectivity-events>=0.1.0,<1.0.0",
-    "ovos-PHAL-plugin-oauth>=0.1.1,<1.0.0"
+    "ovos-phal-plugin-ipgeo>=0.1.9a1,<1.0.0",
+    "ovos-PHAL-plugin-connectivity-events>=0.1.6a1,<1.0.0",
+    "ovos-PHAL-plugin-oauth>=0.1.7a1,<1.0.0"
 ]
 linux = [
-    "ovos-phal-plugin-alsa>=0.1.0,<1.0.0",
-    "ovos-phal-plugin-system>=1.0.0,<2.0.0",
-    "ovos-PHAL-plugin-network-manager>=0.3.1,<2.0.0",
-    "ovos-PHAL-plugin-wallpaper-manager>=0.1.2,<1.0.0"
+    "ovos-phal-plugin-alsa>=0.1.9a1,<1.0.0",
+    "ovos-phal-plugin-system>=1.3.8a1,<2.0.0",
+    "ovos-PHAL-plugin-network-manager>=1.3.7a1,<2.0.0",
+    "ovos-PHAL-plugin-wallpaper-manager>=0.2.8a1,<1.0.0"
 ]
 mac = [
-    "ovos-phal-plugin-mac>=0.0.1,<1.0.0"
+    "ovos-phal-plugin-mac>=0.2.0,<1.0.0"
 ]
 mk1 = [
-    "ovos-PHAL-plugin-mk1>=0.1.2,<1.0.0"
+    "ovos-PHAL-plugin-mk1>=0.1.5a1,<1.0.0"
 ]
 mk2 = [
-    "ovos-PHAL-plugin-hotkeys>=0.1.1,<1.0.0"
+    "ovos-PHAL-plugin-hotkeys>=0.1.3a1,<1.0.0"
 ]
 mk2dev = [
-    "ovos-PHAL-plugin-mk2-fan-control>=0.0.1,<1.0.0"
+    "ovos-PHAL-plugin-mk2-fan-control>=0.0.3a1,<1.0.0"
 ]
 test = [
     "pytest",
