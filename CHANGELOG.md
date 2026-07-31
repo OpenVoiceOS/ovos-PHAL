@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.2.16a2](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.16a2) (2026-07-31)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.16a1...0.2.16a2)
+
+**Merged pull requests:**
+
+- docs: rewrite README in Simplified Technical English [\#97](https://github.com/OpenVoiceOS/ovos-PHAL/pull/97) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.2.16a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.16a1) (2026-06-25)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.15a1...0.2.16a1)
