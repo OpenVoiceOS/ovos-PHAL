@@ -1,5 +1,13 @@
 # Changelog
 
+## [0.3.1a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.3.1a1) (2026-09-01)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.3.0a1...0.3.1a1)
+
+**Merged pull requests:**
+
+- fix: allow ovos-config 3.x [\#101](https://github.com/OpenVoiceOS/ovos-PHAL/pull/101) ([JarbasAl](https://github.com/JarbasAl))
+
 ## [0.3.0a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.3.0a1) (2026-08-11)
 
 [Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.16a2...0.3.0a1)
