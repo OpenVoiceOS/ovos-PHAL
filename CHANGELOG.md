@@ -1,41 +1,60 @@
 # Changelog
 
-## [0.2.12a5](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a5) (2026-03-01)
+## [0.3.1a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.3.1a1) (2026-09-01)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a4...0.2.12a5)
-
-**Merged pull requests:**
-
-- chore: drop deprecated dependencies [\#75](https://github.com/OpenVoiceOS/ovos-PHAL/pull/75) ([JarbasAl](https://github.com/JarbasAl))
-
-## [0.2.12a4](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a4) (2025-12-19)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a2...0.2.12a4)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.3.0a1...0.3.1a1)
 
 **Merged pull requests:**
 
-- chore\(deps\): update dependency python to 3.14 [\#66](https://github.com/OpenVoiceOS/ovos-PHAL/pull/66) ([renovate[bot]](https://github.com/apps/renovate))
+- fix: allow ovos-config 3.x [\#101](https://github.com/OpenVoiceOS/ovos-PHAL/pull/101) ([JarbasAl](https://github.com/JarbasAl))
 
-## [0.2.12a2](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a2) (2025-12-19)
+## [0.3.0a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.3.0a1) (2026-08-11)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a3...0.2.12a2)
-
-## [0.2.12a3](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a3) (2025-12-19)
-
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12a1...0.2.12a3)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.16a2...0.3.0a1)
 
 **Merged pull requests:**
 
-- chore\(deps\): update actions/setup-python action to v6 [\#71](https://github.com/OpenVoiceOS/ovos-PHAL/pull/71) ([renovate[bot]](https://github.com/apps/renovate))
-- chore\(deps\): update actions/checkout action to v6 [\#70](https://github.com/OpenVoiceOS/ovos-PHAL/pull/70) ([renovate[bot]](https://github.com/apps/renovate))
+- feat: run ServiceInstaller so PHAL plugins install into the PHAL env over the bus [\#99](https://github.com/OpenVoiceOS/ovos-PHAL/pull/99) ([JarbasAl](https://github.com/JarbasAl))
 
-## [0.2.12a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.12a1) (2025-12-18)
+## [0.2.16a2](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.16a2) (2026-07-31)
 
-[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.11...0.2.12a1)
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.16a1...0.2.16a2)
 
 **Merged pull requests:**
 
-- chore: Configure Renovate [\#65](https://github.com/OpenVoiceOS/ovos-PHAL/pull/65) ([renovate[bot]](https://github.com/apps/renovate))
+- docs: rewrite README in Simplified Technical English [\#97](https://github.com/OpenVoiceOS/ovos-PHAL/pull/97) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.2.16a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.16a1) (2026-06-25)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.15a1...0.2.16a1)
+
+**Merged pull requests:**
+
+- fix: floor PHAL\[extras\] plugins to bus-client-2.x prereleases [\#95](https://github.com/OpenVoiceOS/ovos-PHAL/pull/95) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.2.15a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.15a1) (2026-06-20)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.14a1...0.2.15a1)
+
+**Merged pull requests:**
+
+- fix: guard AdminPHAL validator.validate so a raising validator skips the plugin [\#93](https://github.com/OpenVoiceOS/ovos-PHAL/pull/93) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.2.14a1](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.14a1) (2026-06-20)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.13a2...0.2.14a1)
+
+**Merged pull requests:**
+
+- fix: allow ovos-bus-client 2.x [\#90](https://github.com/OpenVoiceOS/ovos-PHAL/pull/90) ([JarbasAl](https://github.com/JarbasAl))
+
+## [0.2.13a2](https://github.com/OpenVoiceOS/ovos-PHAL/tree/0.2.13a2) (2026-06-16)
+
+[Full Changelog](https://github.com/OpenVoiceOS/ovos-PHAL/compare/0.2.12...0.2.13a2)
+
+**Merged pull requests:**
+
+- chore: add missing shared CI workflows [\#88](https://github.com/OpenVoiceOS/ovos-PHAL/pull/88) ([JarbasAl](https://github.com/JarbasAl))
 
 
 
