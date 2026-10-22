@@ -55,7 +55,11 @@ class AdminPHAL(PHAL):
             if not enabled:
                 continue  # require explicit enabling by user
             if hasattr(plug, "validator"):
-                enabled = plug.validator.validate(config)
+                try:
+                    enabled = plug.validator.validate(config)
+                except Exception:
+                    LOG.exception(f"Validator failed for PHAL plugin: {name}")
+                    continue
 
             if enabled:
                 try:

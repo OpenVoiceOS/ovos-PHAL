@@ -3,6 +3,7 @@ from ovos_config import Configuration
 from ovos_utils.log import LOG
 from ovos_bus_client.client import MessageBusClient
 from ovos_utils.process_utils import ProcessStatus, StatusCallbackMap
+from ovos_utils.skill_installer import ServiceInstaller
 
 
 def on_ready():
@@ -63,6 +64,15 @@ class PHAL:
             self.admin_config = {}
         self.drivers = {}
         self.status.bind(self.bus)
+        # The admin PHAL is a *separate process* (usually root) that owns the
+        # admin plugins, so it installs into its own environment under a
+        # distinct topic. AdminPHAL passes skill_id="PHAL.admin"; the plain
+        # PHAL daemon uses "PHAL". Route each to its own installer service so a
+        # wifi/system (admin) plugin lands in the root env and a user plugin in
+        # the user env.
+        installer_service = "ovos_PHAL_admin" if self.skill_id == "PHAL.admin" \
+            else "ovos_PHAL"
+        self.installer = ServiceInstaller(self.bus, service_name=installer_service)
 
     def load_plugins(self):
         for name, plug in find_phal_plugins().items():
@@ -104,4 +114,6 @@ class PHAL:
             self.status.set_error(e)
 
     def shutdown(self):
+        if getattr(self, "installer", None):
+            self.installer.shutdown()
         self.status.set_stopping()
